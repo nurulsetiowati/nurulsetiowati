@@ -34,6 +34,9 @@ footer{border-top:1px solid #ffffff18;padding:23px clamp(20px,4vw,56px);display:
 	color: #FFFFFF;
 	font-weight: bold;
 }
+/* Perbaikan kontras khusus tampilan pertama dan kedua: latar dibuat polos agar tulisan lebih jelas. */
+.hero, #about{background-color:#1c1228;position:relative;isolation:isolate}
+.hero::before, #about::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:#1c1228;pointer-events:none}
 </style></head>
 <body><div class="site" id="home"><div class="pattern"></div><div class="orbit"></div>
 <header><a class="brand" href="#home"><span class="brandmark">N</span><span>NURUL SETIOWATI<small>VIRTUAL ASSISTANT | DATA ENTRY | ACCOUNTING </small></span></a><nav><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact" class="nav-cta">Let's Connect ✦</a></nav></header>
